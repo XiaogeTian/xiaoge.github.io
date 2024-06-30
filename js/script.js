@@ -28,7 +28,7 @@ function profile_leave() {
 
 profile_credit.addEventListener("mouseenter", profile_enter);
 profile_credit.addEventListener("mouseleave", profile_leave);
-// profile_leave();
+profile_leave();
 
 var profileCredit = document.getElementById("profile-credit");
 var profile = document.getElementById("profile");
