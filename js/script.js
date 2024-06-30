@@ -19,7 +19,7 @@ var profile = document.getElementById("profile");
 
 function profile_enter() {
   profile.src = hoverImages[counter];
-  counter = (counter + 1) % hoverImages.length;
+  counter = (counter + 1) % 3;
 }
 
 function profile_leave() {
