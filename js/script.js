@@ -17,40 +17,40 @@ var hoverImages = [
 var profile_credit = document.getElementById("profile-credit");
 var profile = document.getElementById("profile");
 
-// function profile_enter() {
-//   profile.src = hoverImages[counter];
-//   counter = (counter + 1) % 3;
-// }
+function profile_enter() {
+  profile.src = hoverImages[counter];
+  counter = (counter + 1) % 3;
+}
 
-// function profile_leave() {
-//   profile.src = "assets/profile/xiaoge.jpg";
-// }
+function profile_leave() {
+  profile.src = "assets/profile/xiaoge.jpg";
+}
 
-// profile_credit.addEventListener("mouseenter", profile_enter);
-// profile_credit.addEventListener("mouseleave", profile_leave);
-// // profile_leave();
+profile_credit.addEventListener("mouseenter", profile_enter);
+profile_credit.addEventListener("mouseleave", profile_leave);
+// profile_leave();
 
-// var profileCredit = document.getElementById("profile-credit");
-// var profile = document.getElementById("profile");
+var profileCredit = document.getElementById("profile-credit");
+var profile = document.getElementById("profile");
 
-// 当鼠标移动到 profile-credit 上时触发
-profile_credit.addEventListener("mouseover", function() {
-  // 检查事件的 target 是否是 profile-credit，以避免子元素触发事件
-  if (event.target.id === 'profile-credit') {
-    profile.src = hoverImages[counter];
-    counter = (counter + 1) % hoverImages.length;
-  }
-});
+// // 当鼠标移动到 profile-credit 上时触发
+// profile_credit.addEventListener("mouseover", function() {
+//   // 检查事件的 target 是否是 profile-credit，以避免子元素触发事件
+//   if (event.target.id === 'profile-credit') {
+//     profile.src = hoverImages[counter];
+//     counter = (counter + 1) % hoverImages.length;
+//   }
+// });
 
-// 当鼠标离开 profile-credit 时触发
-profile_redit.addEventListener("mouseout", function() {
-  // 可以设置一个延迟，以防止鼠标快速移动时频繁触发
-  setTimeout(function() {
-    if (profile.src !== "assets/profile/xiaoge.jpg") {
-      profile.src = "assets/profile/xiaoge.jpg";
-    }
-  }, 50); // 延迟时间可以根据需要调整
-});
+// // 当鼠标离开 profile-credit 时触发
+// profile_redit.addEventListener("mouseout", function() {
+//   // 可以设置一个延迟，以防止鼠标快速移动时频繁触发
+//   setTimeout(function() {
+//     if (profile.src !== "assets/profile/xiaoge.jpg") {
+//       profile.src = "assets/profile/xiaoge.jpg";
+//     }
+//   }, 50); // 延迟时间可以根据需要调整
+// });
 
 
 // Footer year
